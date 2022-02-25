@@ -1,9 +1,12 @@
+import './style.scss';
+
 /**
  * External Dependencies
  */
-import React, { Component, Fragment, createRef } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { Element } from 'react-scroll'
+import { Element } from 'react-scroll';
+import classnames from 'classnames';
 
 /**
  * Internal Dependencies
@@ -24,15 +27,23 @@ class Content extends Component {
     }
 
     render() {
+
+        const {
+            settings
+        } = this.props;
+
         return (
             <Fragment>
+                <div className={classnames(settings.overlay ? 'overlay' : '')}></div>
                 <Hero />
                 <Element id='about' name='about'>
                     <About />
                 </Element>
+                <div className='h-56 bg-base-200'></div>
                 <Element id='experience' name='experience'>
                     <Experience />
                 </Element>
+                <div className='h-56 bg-base-200'></div>
                 <Element id='work' name='work'>
                     <Work />
                 </Element>
@@ -45,4 +56,8 @@ class Content extends Component {
     }
 }
 
-export default Content;
+export default connect(({ settings }) => (
+    {
+        settings
+    }
+))(Content);

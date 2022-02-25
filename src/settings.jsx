@@ -8,6 +8,7 @@ const settings = {
     nav_logo_width: '45px',
     nav_logo_url: '/',
     theme: 'dark',
+    overlay: false,
     navigation: [
         {
             id: 'about',

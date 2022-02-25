@@ -11,7 +11,6 @@ import classnames from "classnames";
 /**
  * Internal Dependencies
  */
-import Icon from '../icon';
 
 /**
  * Component
@@ -42,6 +41,7 @@ class PageLogo extends Component {
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
     }
+
     componentDidUpdate(prevProps) {
         if (prevProps.settings.theme !== this.props.settings.theme) {
             this.setState({

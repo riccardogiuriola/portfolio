@@ -6,13 +6,10 @@ import './style.scss';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { Link } from 'react-scroll';
-import classnames from "classnames";
 
 /**
  * Internal Dependencies
  */
-import Icon from '../icon';
 
 /**
  * Component
@@ -22,84 +19,85 @@ class Credits extends Component {
         super(props);
 
         this.state = {
-            prevScrollpos: window.pageYOffset,
-            visible: true
+            status: false
         };
     }
 
-    loadSocials() {
-        const {
-            settings,
-        } = this.props;
+    closeModal() {
+        this.setState({
+            status: false
+        }, () => this.props.closeCredits())
+    }
 
-        let socials = [];
-        for (const element of settings.navigation) {
-            socials.push(
-                <div class="dropdown dropdown-end w-full">
-                    <label tabindex="0" class="btn btn-ghost w-full">
-                        <Link
-                            to={element.id}
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                        >
-                            <Icon name={element.icon} style={{ margin: 'auto', width: '50%', marginBottom: "5px" }} />
-                            {element.name}
-                        </Link>
-                    </label>
-                </div>
-            );
+    componentDidUpdate(prevProps) {
+        if (prevProps.creditsStatus !== this.props.creditsStatus) {
+            this.setState({
+                status: this.props.creditsStatus
+            })
         }
-        this.setState({
-            socials: socials
-        })
-    }
-
-    handleScroll = () => {
-        const { prevScrollpos } = this.state;
-
-        const currentScrollPos = window.pageYOffset;
-        const visible = prevScrollpos > currentScrollPos;
-
-        this.setState({
-            prevScrollpos: currentScrollPos,
-            visible
-        });
-    };
-
-    componentDidMount() {
-        this.loadSocials();
-        window.addEventListener("scroll", this.handleScroll);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener("scroll", this.handleScroll);
     }
 
     render() {
 
         const {
-            socials
+            status
         } = this.state;
 
         return (
             <>
-                <div className={classnames("z-10 navbar fixed bg-base-100 shadow-xl rounded-xl w-min float-right right-0 mt-4 mr-4 invisible md:visible lg:visible", { "navbar--hidden": !this.state.visible })}>
-                    <div class="flex-none w-full pl-2 pr-2">
-                        {socials}
-                        <button class="btn ml-2 mr-2">Resume</button>
-                        <button class="btn">Credits</button>
-                    </div>
-                </div>
-
-                <div className={classnames("z-10 navbar fixed bg-base-100 mb-40 shadow-xl rounded-xl sm:visible md:invisible lg:invisible", { "navbar--hidden": !this.state.visible })}>
-                    <div class="navbar-start">
-                        <a>asdsad</a>
-                    </div>
-                    <div class="navbar-end">
-                        <label class="btn btn-ghost btn-circle">
-                            <Icon name={["far", "bars-sort"]} vendor="fa" />
-                        </label>
+                <input type="checkbox" id="my-modal" class="modal-toggle" checked={status} />
+                <div class="modal">
+                    <div class="modal-box rounded-md h-screen">
+                        <div class="fixed top-0 right-0 mt-2 mr-2">
+                            <label for="my-modal" class="btn btn-xs" onClick={() => this.closeModal()}>x</label>
+                        </div>
+                        <h3 class="font-bold text-lg">Acknowledgements</h3>
+                        <p class="py-4">These open source libraries were used to develop this portfolio:</p>
+                        <div class="end-credits">
+                            <dl class="text-gray-100">
+                                <dt>@fortawesome/fontawesome-svg-core</dt>
+                                <dt>@fortawesome/free-brands-svg-icons</dt>
+                                <dt>@fortawesome/free-regular-svg-icons</dt>
+                                <dt>@fortawesome/free-solid-svg-icons</dt>
+                                <dt>@fortawesome/react-fontawesome</dt>
+                                <dt>@testing-library/jest-dom</dt>
+                                <dt>@testing-library/react</dt>
+                                <dt>@testing-library/user-event</dt>
+                                <dt>change-case</dt>
+                                <dt>daisyui</dt>
+                                <dt>jquery</dt>
+                                <dt>js-cookie</dt>
+                                <dt>object.omit</dt>
+                                <dt>react</dt>
+                                <dt>react-dom</dt>
+                                <dt>react-feather</dt>
+                                <dt>react-icons</dt>
+                                <dt>react-loadable</dt>
+                                <dt>react-redux</dt>
+                                <dt>react-router-dom</dt>
+                                <dt>react-scripts</dt>
+                                <dt>react-scroll</dt>
+                                <dt>react-tsparticles</dt>
+                                <dt>reactstrap</dt>
+                                <dt>redux</dt>
+                                <dt>sass</dt>
+                                <dt>styled-components</dt>
+                                <dt>typewriter-effect</dt>
+                                <dt>web-vitals</dt>
+                                <dt>workbox-background-sync</dt>
+                                <dt>workbox-broadcast-update</dt>
+                                <dt>workbox-cacheable-response</dt>
+                                <dt>workbox-core</dt>
+                                <dt>workbox-expiration</dt>
+                                <dt>workbox-google-analytics</dt>
+                                <dt>workbox-navigation-preload</dt>
+                                <dt>workbox-precaching</dt>
+                                <dt>workbox-range-requests</dt>
+                                <dt>workbox-routing</dt>
+                                <dt>workbox-strategies</dt>
+                                <dt>workbox-streams</dt>
+                            </dl>
+                        </div>
                     </div>
                 </div>
             </>

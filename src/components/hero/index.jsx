@@ -51,7 +51,7 @@ class Hero extends Component {
                                 }}
                             />
                         </div>
-                        <p class="py-6">I'm a Web Developer based in Milan, Italy specializing in building and designing exceptional, high-quality websites and applications.</p>
+                        <p class="py-6 max-w-sm md:max-w-md lg:max-w-md">I'm a Web Developer based in Milan, Italy specializing in building and designing exceptional, high-quality websites and applications.</p>
                         <button class="btn btn-primary w-fit" onClick={() => window.open("mailto:riccardo.giuriola@hotmail.com")}>Get In Touch</button>
                     </div>
                 </div>
