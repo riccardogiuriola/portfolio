@@ -58,7 +58,7 @@ class About extends Component {
                                     </ul>
                                 </div>
                             </div>
-                            <figure class="w-3/6 m-auto col-span-8 md:col-span-3 md:w-full lg:col-span-3 lg:w-full items-start justify-start profile-pic"><img className='rounded-lg' src="/images/profile_pic.jpg" alt="Shoes" /></figure>
+                            <figure class="w-3/6 m-auto col-span-8 md:col-span-3 md:w-full lg:col-span-3 lg:w-full items-start justify-start profile-pic"><img className='rounded-lg' src="images/profile_pic.jpg" alt="Shoes" /></figure>
                         </div>
                     </div>
                 </div>

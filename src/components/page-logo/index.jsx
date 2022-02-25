@@ -64,7 +64,7 @@ class PageLogo extends Component {
             <>
                 <div className={classnames("z-10 navbar fixed bg-base-100 shadow-xl rounded-xl w-min float-left left-4 mt-4 mr-4 invisible md:visible lg:visible", { "navbar--hidden": !this.state.visible })}>
                     <div class="w-16 p-1">
-                        <img src={"/images/rg_logo_" + theme + ".png"} alt="logo" />
+                        <img src={"images/rg_logo_" + theme + ".png"} alt="logo" />
                     </div>
                 </div>
             </>

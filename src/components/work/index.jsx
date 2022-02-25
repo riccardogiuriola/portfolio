@@ -30,7 +30,7 @@ class Work extends Component {
                                 <div class="divider w-full"></div>
                             </div>
                             <div class="w-full pl-2 col-span-8 md:col-span-5 lg:col-span-5 items-start justify-start">
-                                <figure><img className="rounded-lg" src="/images/portfolio.png" alt="portfolio" /></figure>
+                                <figure><img className="rounded-lg" src="images/portfolio.png" alt="portfolio" /></figure>
                             </div>
                             <div class="w-full float-right pl-2 col-span-8 md:col-span-3 md:w-full lg:col-span-3 lg:w-full items-start justify-start">
                                 <p className='text-right font-bold text-purple-500'>Featured Project</p>

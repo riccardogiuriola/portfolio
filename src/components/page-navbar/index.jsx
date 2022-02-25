@@ -155,7 +155,7 @@ class PageNavbar extends Component {
 
                 <div className={classnames("z-10 navbar fixed bg-base-100 mb-40 shadow-xl rounded-xl sm:visible md:invisible lg:invisible", { "navbar--hidden": !this.state.visible })}>
                     <div class="navbar-start pl-2">
-                        <img className='w-12' src={"/images/rg_logo_" + theme + ".png"} alt="logo" />
+                        <img className='w-12' src={"images/rg_logo_" + theme + ".png"} alt="logo" />
                     </div>
                     <div class="navbar-center">
                         <p className='text-lg'>MyPortfolio</p>
