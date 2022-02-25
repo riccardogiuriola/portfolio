@@ -90,7 +90,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={this.store}>
-        <BrowserRouter >
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <PageWrapWithState />
         </BrowserRouter >
       </Provider>
