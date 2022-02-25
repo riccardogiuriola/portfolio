@@ -1,0 +1,9 @@
+.navbar {
+    
+    top: 0;
+    transition: top 0.6s;
+  }
+  
+  .navbar--hidden {
+    top: -100px;
+  }
