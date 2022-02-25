@@ -11,8 +11,10 @@ class Content extends Component {
     render() {
         return (
             <Fragment>
-                <p className="display-4 mb-30">Page Not Found</p>
-                <Link to="/" className="btn btn-brand">Back Home</Link>
+                <div className='grid grid-rows-2'>
+                    <p className="display-4 mb-30">Page Not Found</p>
+                    <Link to="/" className="z-20 btn btn-brand">Back Home</Link>
+                </div>
             </Fragment>
         );
     }

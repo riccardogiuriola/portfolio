@@ -3,7 +3,6 @@
  */
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import classnames from 'classnames';
 
 /**
  * Internal Dependencies
@@ -45,8 +44,9 @@ class Routes extends Component {
                 <Route
                     render={() => (
                         <>
-                            {/* <div className={'md:pl-16 lg:pl-16'}> */}
-                            <NotFoundPage />
+                            <div className={'flex justify-center items-center text-center min-h-screen'}>
+                                <NotFoundPage />
+                            </div>
                         </>
                     )}
                 />
