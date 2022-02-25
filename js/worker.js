@@ -33,7 +33,7 @@ self.addEventListener('fetch', event => {
 
 // Update a service worker
 self.addEventListener('activate', event => {
-    let cacheWhitelist = ['shell'];
+    let cacheWhitelist = ['riccardogiuriola'];
     event.waitUntil(
         caches.keys().then(cacheNames => {
             return Promise.all(
