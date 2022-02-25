@@ -1,9 +1,10 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Portfolio",
+  "name": "Riccardo Giuriola | Portfolio",
+  "prefer_related_applications": false,
   "icons": [
     {
-      "src": "images/logo-512.png",
+      "src": "images/rg_logo_dark.png",
       "sizes": "512x512",
       "type": "image/png"
     }
