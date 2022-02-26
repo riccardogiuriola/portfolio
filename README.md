@@ -7,7 +7,7 @@
 
 ### 🏠 [Homepage](https://riccardogiuriola.it)
 
-![alt text](public/images/portfolio.PNG)
+![alt portfolio_preview](public/images/portfolio.PNG)
 
 ## Install
 
