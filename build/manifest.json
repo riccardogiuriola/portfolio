@@ -4,7 +4,7 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "images/rg_logo_dark.png",
+      "src": "images/rg_logo_light.png",
       "sizes": "512x512",
       "type": "image/png"
     }
