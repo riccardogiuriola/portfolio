@@ -43,11 +43,11 @@ class Experience extends Component {
                         <p className="text-base">July 2019 - Present</p>
                         <p class="py-0 mt-4">
                             <ul class="menu w-fit text-base rounded-box custom-list">
-                                <li className='mb-4'>▹ Developed and shipped the internal management software used for keeping track of employees activities and customers bills. I achieved this using the MERN stack (Mysql, Express, React, Nodejs). It was an highly challenging and important project that schooled me through the path of the Full Stack Developer.</li>
-                                <li className='mb-4'>▹ Created a software for a customer that required to handle the queue workflow of a ticketing system. Very useful experience that tought me how to approach the customer directly and remotely. I achieved this using the realtime connection library Socket.io and the MERN stack.</li>
+                                <li className='mb-4'>▹ Developed and shipped the internal management software used for keeping track of employee's activities and customers' bills. I achieved this using the MERN stack (Mysql, Express, React, Nodejs). It was a highly challenging and important project that schooled me through the path of the Full Stack Developer.</li>
+                                <li className='mb-4'>▹ Created a software for a customer that required to handle the queue workflow of a ticketing system. Very useful experience that taught me how to approach the customer directly and remotely. I achieved this using the real time connection library Socket.io and the MERN stack.</li>
                                 <li className='mb-4'>▹ Web App used for the internal scan and validation of the employees Green Pass EU Certificate. This is one of my proudest projects because it was born for internal use due to the COVID emergency and continue even outside the company, having a lots of clients that required this platform. I used React for the frontend and handled the validation through Drupal PHP modules. This was also the first time that i had the opportunity to learn Docker for mass distribution.</li>
                                 <li className='mb-4'>▹ Joget plugin for sending SMTP emails through Amazon SES. This was written in Java</li>
-                                <li className='mb-4'>▹ QR gerneration library written in PHP that was later used for sending embedded qr at the bottom of automatic company messages.</li>
+                                <li className='mb-4'>▹ QR generation library written in PHP that was later used for sending embedded qr at the bottom of automatic company messages.</li>
                                 <li className='mb-4'>▹ Website for uploading images including GPS metadata and displaying them on the Open Street Maps service.</li>
                                 <li className='mb-4'>▹ Various Python scripts used for different Problem Solving situations.</li>
                             </ul>
@@ -85,7 +85,7 @@ class Experience extends Component {
                         <p className="text-base">March 2018</p>
                         <p class="py-0 mt-4">
                             <ul class="menu w-fit text-base rounded-box custom-list">
-                                <li className='mb-4'>▹ This school internship was the one that really interested me the most because introduced me @ Linux in an anterprise way. Installed and configured servers for applications deploy.</li>
+                                <li className='mb-4'>▹ This school internship was the one that really interested me the most because introduced me @ Linux in an enterprise way. Installed and configured servers for applications deploy.</li>
                                 <li className='mb-4'>▹ PC clients installations with Windows 10 and software bundling using pre-configured ISO</li>
                             </ul>
                         </p>
@@ -138,7 +138,7 @@ class Experience extends Component {
                         <p className="text-base">September 2013 - June 2019</p>
                         <p class="py-0 mt-4">
                             <ul class="menu w-fit text-base rounded-box custom-list">
-                                <li className='mb-4'>▹ Apprentice under a senior software developer. Had the opportunity to understand how a company management software is developed. Everything were compiled using the .NET framework</li>
+                                <li className='mb-4'>▹ Study of C, PHP, JavaScript, HTML, CSS, Java with various databases for web and client application development</li>
                             </ul>
                         </p>
                         <div class="divider w-full"></div>
