@@ -28,7 +28,7 @@ class About extends Component {
                     <div class="grid grid-rows-1 gap-4 max-w-4xl">
                         <div class="grid grid-cols-8 gap-4 md:pl-20">
                             <div class="col-span-8">
-                                <h1 class="text-5xl font-bold w-full">About Me</h1>
+                                <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-bold w-full">About Me</h1>
                                 <div class="divider w-full"></div>
                             </div>
                             <div class="col-span-8 md:col-span-5 lg:col-span-5 justify-center items-center">

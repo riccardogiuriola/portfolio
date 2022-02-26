@@ -5,11 +5,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { Link } from 'react-scroll';
+import classnames from 'classnames';
 
 /**
  * Internal Dependencies
  */
-import Icon from '../icon';
 
 /**
  * Component
@@ -75,7 +75,7 @@ class Drawer extends Component {
         } = this.state;
 
         return (
-            <div class="z-10 drawer drawer-end fixed h-min w-max float-right right-0 mr-4 mt-20">
+            <div className={classnames("z-10 drawer drawer-end fixed h-min w-max float-right right-0 mr-4 mt-20", status ? "visible" : "hidden")}>
                 <input id="my-drawer-4" type="checkbox" class="drawer-toggle" checked={status} />
                 <div class="drawer-side rounded-xl overflow-x-hidden">
                     <label for="my-drawer-4" class="drawer-overlay"></label>

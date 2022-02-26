@@ -169,7 +169,7 @@ class Experience extends Component {
                     <div class="grid grid-rows-1 gap-4 max-w-4xl">
                         <div class="z-10 grid grid-cols-8 gap-4 md:pl-20">
                             <div class="col-span-8">
-                                <h1 class="text-4xl md:text-5xl lg:text-5xl font-bold w-full">My Journey So Far</h1>
+                                <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-bold w-full">My Journey So Far</h1>
                                 <div class="divider w-full"></div>
                             </div>
                             <div class="z-10 col-span-8 md:col-span-3 lg:col-span-3 justify-center items-center">
@@ -181,7 +181,7 @@ class Experience extends Component {
                                     <li className={classnames(tabId == '4' ? 'bordered' : '')}><a name='4' onClick={(e) => this.changeTab(e.target.name)}>ISIS A. Bernocchi (Graduation)</a></li>
                                 </ul>
 
-                                <div class="z-10 tabs mb-6 visible md:hidden lg:hidden  justify-center items-center">
+                                <div class="tabs mb-6 visible md:hidden lg:hidden  justify-center items-center">
                                     <a className={classnames('tab tab-bordered', tabId == '1' ? 'tab-active' : '')} name='1' onClick={(e) => this.changeTab(e.target.name)}>Si.net</a>
                                     <a className={classnames('tab tab-bordered', tabId == '2' ? 'tab-active' : '')} name='2' onClick={(e) => this.changeTab(e.target.name)}>MBiT</a>
                                     <a className={classnames('tab tab-bordered', tabId == '3' ? 'tab-active' : '')} name='3' onClick={(e) => this.changeTab(e.target.name)}>STUDIO RIPAMONTI</a>

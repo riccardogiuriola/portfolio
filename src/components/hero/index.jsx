@@ -37,10 +37,10 @@ class Hero extends Component {
         return (
             <div class="hero min-h-screen bg-base-200">
                 <div class="text-left hero-content">
-                    <div class="max-w-md">
+                    <div class="max-w-sm md:max-w-md lg:max-w-md">
                         <p>Hi, my name is</p>
-                        <h1 class="text-5xl font-bold">Riccardo Giuriola</h1>
-                        <div class="columns-2 gap-0">
+                        <h1 class="text-4xl md:text-5xl lg:text-5xl font-bold">Riccardo Giuriola</h1>
+                        <div class="grid columns-2 gap-0">
                             <p className='w-max'>I build things for the web using</p>
                             <Typewriter
                                 className='w-max'
