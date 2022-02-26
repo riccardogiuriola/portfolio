@@ -10,6 +10,7 @@ import classnames from 'classnames';
 /**
  * Internal Dependencies
  */
+import Icon from '../icon';
 
 /**
  * Component
@@ -19,7 +20,8 @@ class Drawer extends Component {
         super(props);
 
         this.state = {
-            drawer: <></>
+            drawer: <></>,
+            socials: <></>
         }
     }
 
@@ -55,8 +57,28 @@ class Drawer extends Component {
         })
     }
 
+    loadSocials() {
+        const {
+            settings,
+        } = this.props;
+
+        let socials = [];
+        for (const element of settings.socials) {
+            socials.push(
+
+                <li>
+                    <a onClick={() => window.open(element.url, "_blank")}><Icon name={element.icon} vendor={element.vendor} />{element.name}</a>
+                </li>
+            );
+        }
+        this.setState({
+            socials: socials
+        })
+    }
+
     componentDidMount() {
         this.loadDrawer();
+        this.loadSocials();
     }
 
     componentDidUpdate(prevProps) {
@@ -71,7 +93,8 @@ class Drawer extends Component {
 
         const {
             status,
-            drawer
+            drawer,
+            socials
         } = this.state;
 
         return (
@@ -81,6 +104,8 @@ class Drawer extends Component {
                     <label for="my-drawer-4" class="drawer-overlay"></label>
                     <ul class="menu p-4 w-80 bg-base-100 text-base-content">
                         {drawer}
+                        <div class="divider w-full"></div>
+                        {socials}
                     </ul>
                 </div>
             </div>
