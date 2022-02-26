@@ -148,7 +148,6 @@ class PageNavbar extends Component {
                 <div className={classnames("z-10 navbar fixed bg-base-100 shadow-xl rounded-xl w-min float-right right-0 mt-4 mr-4 invisible md:visible lg:visible", { "navbar--hidden": !this.state.visible })}>
                     <div class="flex-none w-full pl-2 pr-2">
                         {navbar}
-                        <button class="btn ml-2 mr-2">Resume</button>
                         <button class="btn" onClick={() => this.creditsStatus()}>Credits</button>
                     </div>
                 </div>

@@ -7,6 +7,8 @@
 
 ### 🏠 [Homepage](https://riccardogiuriola.it)
 
+![alt text](public/images/portfolio.PNG)
+
 ## Install
 
 ```sh
