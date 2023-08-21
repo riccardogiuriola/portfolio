@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to MyPortfolio 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.2-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.3-blue.svg?cacheSeconds=2592000" />
 </p>
 
 > Riccardo Giuriola personal portfolio
@@ -25,13 +25,14 @@ yarn run start
 
 👤 **Riccardo Giuriola**
 
-* Website: https://riccardogiuriola.it
-* Github: [@riccardogiuriola](https://github.com/riccardogiuriola)
-* LinkedIn: [@riccardo-giuriola-67825715b](https://linkedin.com/in/riccardo-giuriola-67825715b)
+- Website: https://riccardogiuriola.it
+- Github: [@riccardogiuriola](https://github.com/riccardogiuriola)
+- LinkedIn: [@riccardogiuriola](https://linkedin.com/in/riccardo-giuriola-67825715b)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
