@@ -108,7 +108,7 @@ class Experience extends Component {
                 @ Si.net s.r.l
               </a>
             </p>
-            <p className="text-base">July 2019 - Present</p>
+            <p className="text-base">July 2019 - September 2022</p>
             <p class="py-0 mt-4">
               <ul class="menu w-fit text-base rounded-box custom-list">
                 <li className="mb-4">
